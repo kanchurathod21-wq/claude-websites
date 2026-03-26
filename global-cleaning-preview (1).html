@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Cleaning Group | Commercial Cleaning Sydney | 1800 626 659</title>
+<meta name="description" content="Sydney's most trusted commercial cleaning specialists. Office, warehouse, high-rise window & industrial cleaning. 15+ years experience, 500+ business clients. Free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0B1D3A;
+  --navy-mid:#162D52;
+  --teal:#0EA5D4;
+  --teal-light:#38C5F0;
+  --gold:#F59E0B;
+  --gold-dark:#D97706;
+  --white:#FFFFFF;
+  --off-white:#F7F9FC;
+  --gray-100:#EFF3F8;
+  --gray-300:#CBD5E1;
+  --gray-500:#64748B;
+  --gray-700:#334155;
+  --green:#10B981;
+  --font-display:'Barlow Condensed',sans-serif;
+  --font-body:'DM Sans',sans-serif;
+  --shadow-sm:0 2px 8px rgba(11,29,58,0.08);
+  --shadow-md:0 8px 32px rgba(11,29,58,0.12);
+  --shadow-lg:0 24px 60px rgba(11,29,58,0.18);
+  --radius:8px;
+  --transition:0.28s cubic-bezier(0.16,1,0.3,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--navy);background:var(--white);line-height:1.6;overflow-x:hidden}
+
+/* ── NAV ── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:999;background:var(--navy);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:70px;box-shadow:0 2px 20px rgba(0,0,0,0.25)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-icon{width:38px;height:38px;background:var(--teal);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.nav-brand{font-family:var(--font-display);font-weight:700;font-size:1.15rem;color:var(--white);letter-spacing:0.02em;line-height:1.2}
+.nav-brand span{color:var(--teal);display:block;font-size:0.7rem;font-weight:400;letter-spacing:0.1em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.875rem;font-weight:500;transition:color var(--transition)}
+.nav-links a:hover{color:var(--teal)}
+.nav-cta{background:var(--gold);color:var(--navy)!important;padding:0.5rem 1.25rem;border-radius:var(--radius);font-weight:600!important;transition:all var(--transition)!important}
+.nav-cta:hover{background:var(--gold-dark)!important;transform:translateY(-1px)}
+.nav-phone{color:var(--teal)!important;font-family:var(--font-display)!important;font-size:1rem!important;font-weight:700!important;letter-spacing:0.03em}
+
+/* ── PAGES ── */
+.page{display:none;padding-top:70px}
+.page.active{display:block}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;background:var(--navy);overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a3a6b 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(14,165,212,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(14,165,212,0.06) 1px,transparent 1px);background-size:60px 60px}
+.hero-glow{position:absolute;top:-10%;right:-5%;width:700px;height:700px;background:radial-gradient(circle,rgba(14,165,212,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:4rem 2rem;display:grid;grid-template-columns:1fr 440px;gap:5rem;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(14,165,212,0.15);border:1px solid rgba(14,165,212,0.3);border-radius:100px;padding:0.4rem 1rem;margin-bottom:1.5rem}
+.hero-badge span{color:var(--teal);font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase}
+.hero-badge::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);display:block;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.6;transform:scale(1.3)}}
+.hero h1{font-family:var(--font-display);font-weight:800;font-size:clamp(2.8rem,5vw,4.2rem);line-height:1.05;color:var(--white);letter-spacing:-0.01em;margin-bottom:1.5rem}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero h1 mark{background:none;color:var(--gold)}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,0.72);max-width:520px;margin-bottom:2rem;line-height:1.7}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.btn-primary{background:var(--gold);color:var(--navy);padding:0.9rem 2rem;border-radius:var(--radius);font-weight:700;font-size:0.95rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all var(--transition)}
+.btn-primary:hover{background:var(--gold-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,158,11,0.35)}
+.btn-secondary{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.3);padding:0.9rem 2rem;border-radius:var(--radius);font-weight:600;font-size:0.95rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all var(--transition)}
+.btn-secondary:hover{border-color:var(--teal);color:var(--teal)}
+.hero-trust{display:flex;gap:2rem;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.65);font-size:0.82rem}
+.trust-item svg{color:var(--green);flex-shrink:0}
+/* Hero form */
+.hero-form-box{background:var(--white);border-radius:16px;padding:2rem;box-shadow:var(--shadow-lg)}
+.hero-form-box h3{font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:0.25rem}
+.hero-form-box p{font-size:0.82rem;color:var(--gray-500);margin-bottom:1.25rem}
+.form-group{margin-bottom:0.875rem}
+.form-group label{display:block;font-size:0.78rem;font-weight:600;color:var(--gray-700);margin-bottom:0.35rem;text-transform:uppercase;letter-spacing:0.05em}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:0.7rem 0.9rem;border:1.5px solid var(--gray-300);border-radius:var(--radius);font-family:var(--font-body);font-size:0.9rem;color:var(--navy);transition:border-color var(--transition)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--teal)}
+.form-group textarea{height:80px;resize:none}
+.form-submit{width:100%;background:var(--navy);color:var(--white);border:none;padding:0.9rem;border-radius:var(--radius);font-family:var(--font-body);font-size:0.95rem;font-weight:700;cursor:pointer;transition:all var(--transition)}
+.form-submit:hover{background:var(--teal)}
+.form-note{text-align:center;font-size:0.75rem;color:var(--gray-500);margin-top:0.75rem}
+
+/* ── TRUST BAR ── */
+.trust-bar{background:var(--teal);padding:0.9rem 2rem}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.trust-stat{display:flex;align-items:center;gap:8px;color:var(--white)}
+.trust-stat-num{font-family:var(--font-display);font-size:1.5rem;font-weight:800;line-height:1}
+.trust-stat-label{font-size:0.78rem;font-weight:500;opacity:0.85;line-height:1.2}
+.trust-divider{width:1px;height:36px;background:rgba(255,255,255,0.3)}
+
+/* ── SECTION BASE ── */
+.section{padding:5rem 2rem}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-label{font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.6rem}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,4vw,2.8rem);font-weight:800;color:var(--navy);line-height:1.1;margin-bottom:1rem}
+.section-sub{font-size:1rem;color:var(--gray-500);max-width:560px;line-height:1.7}
+.section-header{text-align:center;margin-bottom:3rem}
+.section-header .section-sub{margin:0 auto}
+
+/* ── SERVICES GRID ── */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.service-card{background:var(--white);border:1.5px solid var(--gray-100);border-radius:12px;padding:1.75rem;transition:all var(--transition);position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light));transform:scaleX(0);transform-origin:left;transition:transform var(--transition)}
+.service-card:hover{border-color:var(--teal);box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon{width:52px;height:52px;border-radius:10px;background:var(--gray-100);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem;transition:background var(--transition)}
+.service-card:hover .service-icon{background:rgba(14,165,212,0.12)}
+.service-card h3{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem}
+.service-card p{font-size:0.875rem;color:var(--gray-500);line-height:1.6;margin-bottom:1rem}
+.service-link{font-size:0.82rem;font-weight:600;color:var(--teal);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.service-link:hover{gap:8px}
+
+/* ── WHY US ── */
+.why-us{background:var(--navy)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.why-list{list-style:none;display:flex;flex-direction:column;gap:1.25rem}
+.why-item{display:flex;gap:1rem;align-items:flex-start}
+.why-num{width:42px;height:42px;border-radius:8px;background:rgba(14,165,212,0.15);border:1px solid rgba(14,165,212,0.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--teal);flex-shrink:0}
+.why-content h4{font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:0.25rem}
+.why-content p{font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.6}
+.why-image{position:relative;border-radius:16px;overflow:hidden;background:var(--navy-mid);height:480px;display:flex;align-items:center;justify-content:center}
+.why-image-placeholder{text-align:center;color:rgba(255,255,255,0.25)}
+.why-image-placeholder svg{font-size:4rem;display:block;margin-bottom:1rem}
+.why-badge{position:absolute;bottom:1.5rem;left:1.5rem;background:var(--white);border-radius:10px;padding:1rem 1.25rem;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:10px}
+.why-badge-num{font-family:var(--font-display);font-size:1.8rem;font-weight:800;color:var(--teal);line-height:1}
+.why-badge-text{font-size:0.78rem;color:var(--gray-700);line-height:1.3;max-width:80px}
+
+/* ── TESTIMONIAL ── */
+.testimonial-section{background:var(--off-white)}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.test-card{background:var(--white);border-radius:12px;padding:1.75rem;box-shadow:var(--shadow-sm);border:1px solid var(--gray-100)}
+.test-stars{color:var(--gold);font-size:0.9rem;margin-bottom:1rem;letter-spacing:2px}
+.test-quote{font-size:0.9rem;color:var(--gray-700);line-height:1.7;margin-bottom:1.25rem;font-style:italic}
+.test-meta{display:flex;align-items:center;gap:10px}
+.test-avatar{width:40px;height:40px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;color:var(--white);font-size:0.9rem;flex-shrink:0}
+.test-name{font-weight:600;font-size:0.85rem;color:var(--navy)}
+.test-detail{font-size:0.75rem;color:var(--gray-500)}
+
+/* ── CTA BANNER ── */
+.cta-banner{background:linear-gradient(135deg,var(--teal) 0%,#0284C7 100%);padding:4rem 2rem;text-align:center}
+.cta-banner h2{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--white);margin-bottom:0.75rem}
+.cta-banner p{color:rgba(255,255,255,0.85);font-size:1rem;margin-bottom:2rem}
+.cta-banner .btn-white{background:var(--white);color:var(--navy);padding:0.9rem 2.2rem;border-radius:var(--radius);font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all var(--transition)}
+.cta-banner .btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.2)}
+.cta-banner .btn-outline-white{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.5);padding:0.9rem 2.2rem;border-radius:var(--radius);font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all var(--transition)}
+.cta-banner .btn-outline-white:hover{border-color:var(--white);background:rgba(255,255,255,0.1)}
+.cta-btns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+
+/* ── FAQ ── */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.faq-item{border:1.5px solid var(--gray-100);border-radius:10px;padding:1.25rem 1.5rem;transition:border-color var(--transition)}
+.faq-item:hover{border-color:var(--teal)}
+.faq-q{font-weight:600;font-size:0.9rem;color:var(--navy);margin-bottom:0.5rem}
+.faq-a{font-size:0.85rem;color:var(--gray-500);line-height:1.6}
+
+/* ── SERVICES PAGE ── */
+.page-hero{background:var(--navy);padding:5rem 2rem 4rem;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(14,165,212,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(14,165,212,0.06) 1px,transparent 1px);background-size:50px 50px}
+.page-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:2}
+.page-hero h1{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,3.5rem);font-weight:800;color:var(--white);margin-bottom:1rem}
+.page-hero h1 em{font-style:normal;color:var(--teal)}
+.page-hero p{color:rgba(255,255,255,0.7);max-width:580px;font-size:1.05rem;line-height:1.7}
+.breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:1.25rem;font-size:0.8rem}
+.breadcrumb a{color:rgba(255,255,255,0.5);text-decoration:none}
+.breadcrumb span{color:var(--teal)}
+.services-detail-grid{display:grid;gap:2rem}
+.service-detail-card{display:grid;grid-template-columns:1fr 380px;gap:2.5rem;align-items:start;background:var(--white);border-radius:16px;padding:2.5rem;border:1.5px solid var(--gray-100);box-shadow:var(--shadow-sm)}
+.service-detail-card:nth-child(even){grid-template-columns:380px 1fr}
+.service-detail-card:nth-child(even) .sd-img{order:-1}
+.sd-label{font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:0.5rem}
+.sd-title{font-family:var(--font-display);font-size:1.8rem;font-weight:800;color:var(--navy);margin-bottom:0.75rem;line-height:1.1}
+.sd-desc{color:var(--gray-500);font-size:0.9rem;line-height:1.7;margin-bottom:1.25rem}
+.sd-features{list-style:none;display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.5rem}
+.sd-features li{display:flex;align-items:center;gap:8px;font-size:0.875rem;color:var(--gray-700)}
+.sd-features li::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}
+.sd-img{background:var(--gray-100);border-radius:12px;height:260px;display:flex;align-items:center;justify-content:center;color:var(--gray-500);font-size:3rem}
+.process-section{background:var(--off-white)}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.process-step{text-align:center;position:relative}
+.process-step::after{content:'→';position:absolute;right:-20px;top:24px;color:var(--gray-300);font-size:1.2rem}
+.process-step:last-child::after{display:none}
+.process-num{width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin:0 auto 1rem}
+.process-step h4{font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.process-step p{font-size:0.82rem;color:var(--gray-500);line-height:1.5}
+
+/* ── ABOUT PAGE ── */
+.about-story{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about-img{background:var(--gray-100);border-radius:16px;height:420px;display:flex;align-items:center;justify-content:center;color:var(--gray-400);font-size:3rem;position:relative}
+.about-badge{position:absolute;bottom:-20px;right:-20px;background:var(--navy);color:var(--white);border-radius:12px;padding:1.25rem 1.5rem;text-align:center;box-shadow:var(--shadow-md)}
+.about-badge strong{font-family:var(--font-display);font-size:2.2rem;font-weight:800;color:var(--teal);display:block;line-height:1}
+.about-badge span{font-size:0.75rem;opacity:0.7}
+.about-story p{color:var(--gray-500);font-size:0.95rem;line-height:1.8;margin-bottom:1rem}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.value-card{text-align:center;padding:2rem 1.5rem;border:1.5px solid var(--gray-100);border-radius:12px}
+.value-icon{font-size:2.2rem;margin-bottom:1rem;display:block}
+.value-card h4{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem}
+.value-card p{font-size:0.85rem;color:var(--gray-500);line-height:1.6}
+.stats-bar{background:var(--navy);padding:3rem 2rem}
+.stats-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}
+.stat-item strong{font-family:var(--font-display);font-size:2.8rem;font-weight:800;color:var(--teal);display:block;line-height:1}
+.stat-item span{color:rgba(255,255,255,0.6);font-size:0.85rem}
+
+/* ── TESTIMONIALS PAGE ── */
+.tests-full-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.test-full-card{background:var(--white);border-radius:12px;padding:1.75rem;box-shadow:var(--shadow-sm);border:1px solid var(--gray-100)}
+.test-service-tag{display:inline-block;background:rgba(14,165,212,0.1);color:var(--teal);font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:0.25rem 0.65rem;border-radius:100px;margin-bottom:0.75rem}
+.case-study{background:var(--navy);border-radius:16px;padding:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:3rem}
+.case-before-after{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.case-col{padding:1.25rem;border-radius:10px}
+.case-col.before{background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2)}
+.case-col.after{background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2)}
+.case-col-label{font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem}
+.case-col.before .case-col-label{color:#EF4444}
+.case-col.after .case-col-label{color:var(--green)}
+.case-col p{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.6}
+.case-text h3{font-family:var(--font-display);font-size:1.6rem;font-weight:800;color:var(--white);margin-bottom:1rem}
+.case-text p{color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.7}
+
+/* ── CONTACT PAGE ── */
+.contact-grid{display:grid;grid-template-columns:1fr 380px;gap:3rem;align-items:start}
+.contact-form-box{background:var(--white);border-radius:16px;padding:2.5rem;box-shadow:var(--shadow-md);border:1px solid var(--gray-100)}
+.contact-form-box h2{font-family:var(--font-display);font-size:1.8rem;font-weight:800;color:var(--navy);margin-bottom:0.4rem}
+.contact-form-box>.sub{color:var(--gray-500);font-size:0.9rem;margin-bottom:2rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.contact-sidebar{display:flex;flex-direction:column;gap:1.5rem}
+.contact-info-card{background:var(--navy);border-radius:12px;padding:1.75rem;color:var(--white)}
+.contact-info-card h3{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--teal);margin-bottom:1.25rem}
+.contact-info-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:1.1rem}
+.contact-info-item:last-child{margin-bottom:0}
+.contact-info-icon{width:36px;height:36px;background:rgba(14,165,212,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.contact-info-text strong{display:block;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.6);margin-bottom:0.2rem;text-transform:uppercase;letter-spacing:0.05em;font-size:0.72rem}
+.contact-info-text a,.contact-info-text span{color:var(--white);text-decoration:none;font-size:0.9rem}
+.contact-info-text a:hover{color:var(--teal)}
+.hours-card{background:var(--off-white);border-radius:12px;padding:1.5rem}
+.hours-card h3{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:1rem}
+.hours-row{display:flex;justify-content:space-between;font-size:0.85rem;padding:0.4rem 0;border-bottom:1px solid var(--gray-100)}
+.hours-row:last-child{border-bottom:none}
+.hours-row .day{color:var(--gray-700);font-weight:500}
+.hours-row .time{color:var(--gray-500)}
+.map-placeholder{background:var(--gray-100);border-radius:12px;height:200px;display:flex;align-items:center;justify-content:center;color:var(--gray-500);font-size:0.85rem;text-align:center}
+.response-badge{background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:10px;padding:1rem 1.25rem;display:flex;align-items:center;gap:10px;margin-bottom:1.5rem}
+.response-badge-dot{width:10px;height:10px;background:var(--green);border-radius:50%;flex-shrink:0}
+.response-badge p{font-size:0.85rem;color:var(--gray-700)}<br>.response-badge strong{color:var(--green)}
+
+/* ── FOOTER ── */
+footer{background:#060E1E;padding:3.5rem 2rem 1.5rem}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:3rem;margin-bottom:3rem}
+.footer-brand h3{font-family:var(--font-display);font-size:1.4rem;font-weight:800;color:var(--white);margin-bottom:0.5rem}
+.footer-brand p{font-size:0.85rem;color:rgba(255,255,255,0.45);line-height:1.7;max-width:280px}
+.footer-phone{display:flex;align-items:center;gap:8px;color:var(--teal);font-family:var(--font-display);font-size:1.3rem;font-weight:700;text-decoration:none;margin-top:1rem}
+.footer-col h4{font-family:var(--font-display);font-size:0.85rem;font-weight:700;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
+.footer-col ul a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.85rem;transition:color var(--transition)}
+.footer-col ul a:hover{color:var(--teal)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{color:rgba(255,255,255,0.3);font-size:0.8rem}
+
+/* ── MOBILE NAV TOGGLE ── */
+.nav-toggle{display:none;background:none;border:none;color:var(--white);cursor:pointer;font-size:1.4rem}
+
+@media(max-width:900px){
+  .nav-links{display:none}
+  .nav-toggle{display:block}
+  .hero-inner{grid-template-columns:1fr;gap:2rem}
+  .hero-form-box{display:none}
+  .services-grid,.testimonials-grid,.tests-full-grid{grid-template-columns:1fr 1fr}
+  .why-grid,.about-story,.contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .service-detail-card,.service-detail-card:nth-child(even){grid-template-columns:1fr}
+  .service-detail-card:nth-child(even) .sd-img{order:0}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .faq-grid{grid-template-columns:1fr}
+  .case-study{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .services-grid,.testimonials-grid,.tests-full-grid{grid-template-columns:1fr}
+}
+
+/* ── ANIMATIONS ── */
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav-logo" onclick="showPage('home')">
+    <div class="nav-logo-icon">✨</div>
+    <div class="nav-brand">Global Cleaning Group<span>Commercial Cleaning Sydney</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('home')">Home</a></li>
+    <li><a href="#" onclick="showPage('services')">Services</a></li>
+    <li><a href="#" onclick="showPage('about')">About</a></li>
+    <li><a href="#" onclick="showPage('testimonials')">Reviews</a></li>
+    <li><a href="tel:1800626659" class="nav-phone">☎ 1800 626 659</a></li>
+    <li><a href="#" onclick="showPage('contact')" class="nav-cta">Get Free Quote</a></li>
+  </ul>
+  <button class="nav-toggle">☰</button>
+</nav>
+
+<!-- ═══════════════════ PAGE: HOME ═══════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge"><span>Sydney's Commercial Cleaning Specialists</span></div>
+        <h1>Sydney Businesses Deserve <em>Spotless</em> Workplaces — <mark>Guaranteed.</mark></h1>
+        <p class="hero-sub">From CBD high-rises to Western Sydney warehouses — Global Cleaning Group delivers professional commercial cleaning that keeps your business running at its best. 15+ years. 500+ clients. Zero lock-in contracts.</p>
+        <div class="hero-actions">
+          <a href="#" onclick="showPage('contact')" class="btn-primary">→ Get Your Free Quote</a>
+          <a href="tel:1800626659" class="btn-secondary">☎ Call 1800 626 659</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>No lock-in contracts</div>
+          <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Fully insured & police-checked</div>
+          <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Respond within 2 business hours</div>
+        </div>
+      </div>
+      <div class="hero-form-box">
+        <h3>Get Your Free Quote</h3>
+        <p>No obligation · Response within 2 hours</p>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="e.g. James Robertson">
+        </div>
+        <div class="form-group">
+          <label>Business Name</label>
+          <input type="text" placeholder="e.g. Robertson Logistics">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="0400 000 000">
+        </div>
+        <div class="form-group">
+          <label>Service Required</label>
+          <select>
+            <option>— Select a service —</option>
+            <option>Office Cleaning</option>
+            <option>Warehouse Cleaning</option>
+            <option>Window & Glass Cleaning</option>
+            <option>High-Pressure Cleaning</option>
+            <option>Strip & Seal Vinyl Floors</option>
+            <option>Strata / Building Cleaning</option>
+            <option>Multiple Services</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Suburb / Area</label>
+          <input type="text" placeholder="e.g. Parramatta, Sydney CBD">
+        </div>
+        <button class="form-submit">Request Free Quote →</button>
+        <p class="form-note">🔒 Your details are safe. We'll never spam you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-stat"><div><div class="trust-stat-num">15+</div><div class="trust-stat-label">Years in Business</div></div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat"><div><div class="trust-stat-num">500+</div><div class="trust-stat-label">Business Clients Served</div></div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat"><div><div class="trust-stat-num">98%</div><div class="trust-stat-label">Client Retention Rate</div></div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat"><div><div class="trust-stat-num">6</div><div class="trust-stat-label">Specialist Services</div></div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat"><div><div class="trust-stat-num">2hr</div><div class="trust-stat-label">Quote Response Guarantee</div></div></div>
+    </div>
+  </div>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Commercial Cleaning Services Across Sydney</h2>
+        <p class="section-sub">From daily office maintenance to one-off industrial deep cleans — we have the team, equipment, and experience to handle it all.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">🏢</div>
+          <h3>Office Cleaning</h3>
+          <p>Daily, weekly, or after-hours office cleaning for businesses of all sizes. Hygienic, consistent, and disruption-free.</p>
+          <a href="#" class="service-link" onclick="showPage('services')">Learn more →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🏭</div>
+          <h3>Warehouse Cleaning</h3>
+          <p>Heavy-duty industrial and warehouse cleaning tailored to your layout, shift schedule, and compliance requirements.</p>
+          <a href="#" class="service-link" onclick="showPage('services')">Learn more →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🪟</div>
+          <h3>Window & Glass Cleaning</h3>
+          <p>Internal and external window cleaning for offices, commercial towers, and retail spaces. Streak-free, every time.</p>
+          <a href="#" class="service-link" onclick="showPage('services')">Learn more →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">💧</div>
+          <h3>High-Pressure Cleaning</h3>
+          <p>Environmentally responsible high-pressure wash for car parks, driveways, loading docks, and building exteriors.</p>
+          <a href="#" class="service-link" onclick="showPage('services')">Learn more →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">✨</div>
+          <h3>Strip & Seal Vinyl Floors</h3>
+          <p>Strip old product, deep clean, and reseal vinyl floors to restore shine and extend floor life significantly.</p>
+          <a href="#" class="service-link" onclick="showPage('services')">Learn more →</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🏗️</div>
+          <h3>Strata & Building Cleaning</h3>
+          <p>Common area and strata cleaning programs for residential and commercial buildings across Greater Sydney.</p>
+          <a href="#" class="service-link" onclick="showPage('services')">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why-us">
+    <div class="section-inner">
+      <div class="why-grid">
+        <div>
+          <div class="section-label" style="color:var(--teal-light)">Why Choose Us</div>
+          <h2 class="section-title" style="color:var(--white)">The Commercial Cleaning Partner Sydney Businesses Trust</h2>
+          <p class="section-sub" style="color:rgba(255,255,255,0.6);margin-bottom:2rem">We're not a franchise with rotating staff and generic checklists. We're a Sydney-owned company with dedicated site teams who know your building.</p>
+          <ul class="why-list">
+            <li class="why-item"><div class="why-num">01</div><div class="why-content"><h4>Dedicated Site Teams</h4><p>Same cleaners, every visit. Your team learns your site, your preferences, and your standards.</p></div></li>
+            <li class="why-item"><div class="why-num">02</div><div class="why-content"><h4>No Lock-In Contracts</h4><p>We earn your business every month. Cancel anytime with 30 days notice — no questions, no fees.</p></div></li>
+            <li class="why-item"><div class="why-num">03</div><div class="why-content"><h4>Fully Insured & Compliant</h4><p>$20M public liability insurance, police-checked staff, WHS-compliant, and OHS induction ready.</p></div></li>
+            <li class="why-item"><div class="why-num">04</div><div class="why-content"><h4>100% Satisfaction Promise</h4><p>If you're not happy with a clean, we'll return within 24 hours to fix it — at no extra cost.</p></div></li>
+          </ul>
+        </div>
+        <div class="why-image">
+          <div class="why-image-placeholder">
+            <div style="font-size:4rem">🧹</div>
+            <p style="font-size:0.85rem;margin-top:0.5rem">Photo: Team on-site<br><small>Replace with real photo</small></p>
+          </div>
+          <div class="why-badge">
+            <div class="why-badge-num">★ 4.9</div>
+            <div class="why-badge-text">Google Rating 200+ Reviews</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonial-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">What Clients Say</div>
+        <h2 class="section-title">Trusted by Sydney Businesses</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="test-card fade-in">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-quote">"Global Cleaning has been cleaning our Parramatta office for 3 years. Their team is reliable, thorough, and always professional. The quality has never dropped."</p>
+          <div class="test-meta"><div class="test-avatar">MR</div><div><div class="test-name">Michael R.</div><div class="test-detail">Operations Manager · Parramatta · Office Cleaning</div></div></div>
+        </div>
+        <div class="test-card fade-in">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-quote">"We switched from our old cleaner and haven't looked back. The warehouse is cleaner than it's ever been. They worked around our night shift schedule perfectly."</p>
+          <div class="test-meta"><div class="test-avatar">SL</div><div><div class="test-name">Sarah L.</div><div class="test-detail">Facility Manager · Blacktown · Warehouse Cleaning</div></div></div>
+        </div>
+        <div class="test-card fade-in">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-quote">"Called at 9am, had a quote by 11am and cleaning started the following Monday. The strip and seal on our floors looks brand new. Couldn't recommend them more highly."</p>
+          <div class="test-meta"><div class="test-avatar">DK</div><div><div class="test-name">David K.</div><div class="test-detail">Business Owner · Seven Hills · Strip & Seal</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <h2>Ready for a Cleaner Workplace?</h2>
+    <p>Get a free, no-obligation quote for your Sydney business today. We respond within 2 business hours.</p>
+    <div class="cta-btns">
+      <a href="#" onclick="showPage('contact')" class="btn-white">→ Get Your Free Quote</a>
+      <a href="tel:1800626659" class="btn-outline-white">☎ Call 1800 626 659</a>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Common Questions</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item"><div class="faq-q">Do you service all areas of Sydney?</div><div class="faq-a">Yes — we cover the full Greater Sydney metro area including the CBD, inner suburbs, western Sydney, the Hills District, and Macarthur. Call us to confirm your area.</div></div>
+        <div class="faq-item"><div class="faq-q">Are there lock-in contracts?</div><div class="faq-a">No. We work on a flexible month-to-month basis. We believe in earning your business every single month, not trapping you in a contract.</div></div>
+        <div class="faq-item"><div class="faq-q">Are your staff police-checked and insured?</div><div class="faq-a">Absolutely. All team members are police-checked, hold relevant licences, and we carry $20M public liability insurance. Full compliance documentation available on request.</div></div>
+        <div class="faq-item"><div class="faq-q">Can you clean outside business hours?</div><div class="faq-a">Yes — we specialise in after-hours, early morning, and weekend cleaning so your business is never disrupted during trading hours.</div></div>
+        <div class="faq-item"><div class="faq-q">How quickly can you start?</div><div class="faq-a">In most cases we can have a quote to you within 2 hours and commence cleaning within the week. For urgent requirements, call us directly on 1800 626 659.</div></div>
+        <div class="faq-item"><div class="faq-q">What if I'm not happy with a clean?</div><div class="faq-a">We offer a 100% satisfaction guarantee. If you're not satisfied, we'll return within 24 hours to fix the issue at no additional cost — no arguments, no excuses.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Global Cleaning Group</h3>
+          <p>Sydney's trusted commercial cleaning specialists for over 15 years. Serving businesses across the Greater Sydney area with professionalism and pride.</p>
+          <a href="tel:1800626659" class="footer-phone">☎ 1800 626 659</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('services')">Office Cleaning</a></li>
+            <li><a href="#" onclick="showPage('services')">Warehouse Cleaning</a></li>
+            <li><a href="#" onclick="showPage('services')">Window Cleaning</a></li>
+            <li><a href="#" onclick="showPage('services')">High-Pressure Cleaning</a></li>
+            <li><a href="#" onclick="showPage('services')">Strip & Seal Floors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            <li><a href="#" onclick="showPage('testimonials')">Client Reviews</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:1800626659">1800 626 659</a></li>
+            <li><a href="mailto:info@globalgrp.com.au">info@globalgrp.com.au</a></li>
+            <li><a href="#">57 Bulolo Drive, Whalan NSW 2770</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Global Cleaning Group. All rights reserved. ABN: XX XXX XXX XXX</p>
+        <p style="color:rgba(255,255,255,0.2)">Fully Insured · Police Checked · WHS Compliant</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ═══════════════════ PAGE: SERVICES ═══════════════════ -->
+<div id="page-services" class="page">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a> › <span>Services</span></div>
+      <h1>Commercial Cleaning Services <em>Built for Sydney Businesses</em></h1>
+      <p>From office blocks to industrial warehouses — every service is delivered by trained, dedicated teams with professional equipment and a 100% satisfaction guarantee.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="services-detail-grid">
+        <div class="service-detail-card">
+          <div>
+            <div class="sd-label">Service 01</div>
+            <h2 class="sd-title">Office Cleaning</h2>
+            <p class="sd-desc">A clean workplace isn't just about appearances — it directly impacts employee productivity, client impressions, and staff health. Our office cleaning teams work to your schedule (before hours, after hours, or weekends) so your business is never disrupted.</p>
+            <ul class="sd-features">
+              <li>Daily, weekly, or fortnightly schedules available</li>
+              <li>Desks, common areas, kitchens & bathrooms</li>
+              <li>COVID-safe deep cleaning protocols available</li>
+              <li>Same team, every visit</li>
+              <li>Quality checklist completed after each clean</li>
+            </ul>
+            <a href="#" onclick="showPage('contact')" class="btn-primary" style="font-size:0.875rem;padding:0.7rem 1.5rem">Get Office Cleaning Quote →</a>
+          </div>
+          <div class="sd-img">🏢<br><small style="font-size:0.7rem;margin-top:0.5rem;display:block;color:var(--gray-400)">Replace with photo</small></div>
+        </div>
+
+        <div class="service-detail-card">
+          <div>
+            <div class="sd-label">Service 02</div>
+            <h2 class="sd-title">Warehouse & Industrial Cleaning</h2>
+            <p class="sd-desc">Industrial environments demand industrial-grade cleaning. We tailor our warehouse cleaning programs to your shift patterns, machinery layout, and WHS compliance obligations — without interrupting production.</p>
+            <ul class="sd-features">
+              <li>Night shift and weekend cleans available</li>
+              <li>Floor scrubbing and machine sweeping</li>
+              <li>Loading dock and amenities cleaning</li>
+              <li>WHS-compliant procedures and documentation</li>
+              <li>Scale from 500m² to 20,000m²+</li>
+            </ul>
+            <a href="#" onclick="showPage('contact')" class="btn-primary" style="font-size:0.875rem;padding:0.7rem 1.5rem">Get Warehouse Quote →</a>
+          </div>
+          <div class="sd-img">🏭</div>
+        </div>
+
+        <div class="service-detail-card">
+          <div>
+            <div class="sd-label">Service 03</div>
+            <h2 class="sd-title">Window & Glass Cleaning</h2>
+            <p class="sd-desc">First impressions start at the facade. Our window cleaning teams handle everything from ground-floor retail windows to multi-storey commercial towers, delivering a streak-free finish every time using professional water-fed pole and rope-access systems.</p>
+            <ul class="sd-features">
+              <li>Internal and external glass cleaning</li>
+              <li>High-rise and multi-storey buildings</li>
+              <li>Pure water technology — streak-free results</li>
+              <li>Retail, commercial, and corporate clients</li>
+              <li>One-off or scheduled maintenance programs</li>
+            </ul>
+            <a href="#" onclick="showPage('contact')" class="btn-primary" style="font-size:0.875rem;padding:0.7rem 1.5rem">Get Window Cleaning Quote →</a>
+          </div>
+          <div class="sd-img">🪟</div>
+        </div>
+
+        <div class="service-detail-card">
+          <div>
+            <div class="sd-label">Service 04</div>
+            <h2 class="sd-title">High-Pressure Cleaning</h2>
+            <p class="sd-desc">Blast away years of grime, grease, and stains from hard surfaces. Our environmentally responsible high-pressure cleaning service restores car parks, loading docks, driveways, and building exteriors to like-new condition.</p>
+            <ul class="sd-features">
+              <li>Car parks, driveways & loading docks</li>
+              <li>Building facades and cladding</li>
+              <li>Graffiti removal</li>
+              <li>Eco-friendly biodegradable cleaning agents</li>
+              <li>Commercial and strata properties</li>
+            </ul>
+            <a href="#" onclick="showPage('contact')" class="btn-primary" style="font-size:0.875rem;padding:0.7rem 1.5rem">Get Pressure Cleaning Quote →</a>
+          </div>
+          <div class="sd-img">💧</div>
+        </div>
+
+        <div class="service-detail-card">
+          <div>
+            <div class="sd-label">Service 05</div>
+            <h2 class="sd-title">Strip & Seal Vinyl Floors</h2>
+            <p class="sd-desc">Old, dull, or worn vinyl floors are a liability — both visually and literally. Our strip and seal service removes degraded product, deeply cleans the floor substrate, and applies fresh professional-grade sealer to restore gloss and protect the surface.</p>
+            <ul class="sd-features">
+              <li>Full strip of old wax and sealer</li>
+              <li>Deep clean and neutralisation</li>
+              <li>Multiple coats of commercial-grade sealer</li>
+              <li>Supermarkets, aged care, schools, warehouses</li>
+              <li>Maintenance top-up programs available</li>
+            </ul>
+            <a href="#" onclick="showPage('contact')" class="btn-primary" style="font-size:0.875rem;padding:0.7rem 1.5rem">Get Floor Cleaning Quote →</a>
+          </div>
+          <div class="sd-img">✨</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">How It Works</div>
+        <h2 class="section-title">Getting Started is Simple</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-num">1</div>
+          <h4>Request a Quote</h4>
+          <p>Submit the form online or call 1800 626 659. We respond within 2 business hours.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">2</div>
+          <h4>Site Assessment</h4>
+          <p>We visit your site, understand your needs, and prepare a tailored cleaning plan and quote.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">3</div>
+          <h4>Agree & Schedule</h4>
+          <p>Review our proposal, agree on the schedule, and confirm your start date. No lock-in required.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">4</div>
+          <h4>Cleaning Begins</h4>
+          <p>Your dedicated team arrives on time, completes the job, and leaves a quality checklist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>Not Sure Which Service You Need?</h2>
+    <p>Call us and we'll help you figure out exactly what your business requires — at no cost.</p>
+    <div class="cta-btns">
+      <a href="#" onclick="showPage('contact')" class="btn-white">→ Get a Free Quote</a>
+      <a href="tel:1800626659" class="btn-outline-white">☎ 1800 626 659</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand"><h3>Global Cleaning Group</h3><p>Sydney's commercial cleaning specialists for 15+ years.</p><a href="tel:1800626659" class="footer-phone">☎ 1800 626 659</a></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="#" onclick="showPage('services')">Office Cleaning</a></li><li><a href="#" onclick="showPage('services')">Warehouse Cleaning</a></li><li><a href="#" onclick="showPage('services')">Window Cleaning</a></li><li><a href="#" onclick="showPage('services')">High-Pressure Cleaning</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('about')">About Us</a></li><li><a href="#" onclick="showPage('testimonials')">Reviews</a></li><li><a href="#" onclick="showPage('contact')">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:1800626659">1800 626 659</a></li><li><a href="mailto:info@globalgrp.com.au">info@globalgrp.com.au</a></li><li><a href="#">Whalan NSW 2770</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Global Cleaning Group. All rights reserved.</p></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ═══════════════════ PAGE: ABOUT ═══════════════════ -->
+<div id="page-about" class="page">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a> › <span>About Us</span></div>
+      <h1>15 Years of <em>Keeping Sydney Businesses</em> at Their Best</h1>
+      <p>We started Global Cleaning Group because we believed Sydney businesses deserved a cleaner that showed up, cared, and got it right — every single time.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="about-story">
+        <div class="about-img">
+          <div style="text-align:center;color:var(--gray-400)">
+            <div style="font-size:3rem">👥</div>
+            <p style="font-size:0.8rem;margin-top:0.5rem">Photo: Founders / Team<br><small>Replace with real photo</small></p>
+          </div>
+          <div class="about-badge">
+            <strong>2009</strong>
+            <span>Est. in Sydney</span>
+          </div>
+        </div>
+        <div>
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">We Built the Company We Wished Existed</h2>
+          <p>Back in 2009, our founders were frustrated. Business owners they knew kept telling the same story — cleaners who didn't show up, cut corners, or vanished after a month. The commercial cleaning industry was full of promises and short on follow-through.</p>
+          <p>So they started Global Cleaning Group with a simple premise: do what you say you'll do, care about the outcome, and treat every client's workplace like it's your own.</p>
+          <p>Over 15 years later, that philosophy has built a company with 500+ loyal clients across Greater Sydney — from family-owned SMEs to national logistics companies — and a team that's genuinely proud of the work they deliver every day.</p>
+          <p>We're still Sydney-owned, still personally invested, and still picking up the phone when you call.</p>
+          <a href="#" onclick="showPage('contact')" class="btn-primary" style="margin-top:1.5rem;display:inline-flex">Get in Touch Today →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item"><strong>15+</strong><span>Years serving Sydney</span></div>
+      <div class="stat-item"><strong>500+</strong><span>Business clients</span></div>
+      <div class="stat-item"><strong>98%</strong><span>Retention rate</span></div>
+      <div class="stat-item"><strong>$20M</strong><span>Public liability cover</span></div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">What We Stand For</div>
+        <h2 class="section-title">Our Core Values</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card"><span class="value-icon">🎯</span><h4>Reliability Above All</h4><p>We show up. On time, every time. If something changes, we call you first — never after the fact.</p></div>
+        <div class="value-card"><span class="value-icon">🛡️</span><h4>Transparency & Integrity</h4><p>No hidden fees, no surprise invoices. What we quote is what you pay. Our contracts are plain English.</p></div>
+        <div class="value-card"><span class="value-icon">📈</span><h4>Continuous Improvement</h4><p>We invest in training, equipment, and eco-friendly products to deliver better results year after year.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>Ready to Work With a Cleaner You Can Trust?</h2>
+    <p>Get a free, no-obligation quote and see what 15 years of experience looks like.</p>
+    <div class="cta-btns">
+      <a href="#" onclick="showPage('contact')" class="btn-white">→ Get Your Free Quote</a>
+      <a href="tel:1800626659" class="btn-outline-white">☎ 1800 626 659</a>
+    </div>
+  </div>
+
+  <footer><div class="footer-inner"><div class="footer-grid"><div class="footer-brand"><h3>Global Cleaning Group</h3><p>Sydney's commercial cleaning specialists for 15+ years.</p><a href="tel:1800626659" class="footer-phone">☎ 1800 626 659</a></div><div class="footer-col"><h4>Services</h4><ul><li><a href="#" onclick="showPage('services')">Office Cleaning</a></li><li><a href="#" onclick="showPage('services')">Warehouse Cleaning</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('about')">About Us</a></li><li><a href="#" onclick="showPage('testimonials')">Reviews</a></li><li><a href="#" onclick="showPage('contact')">Contact</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:1800626659">1800 626 659</a></li></ul></div></div><div class="footer-bottom"><p>© 2025 Global Cleaning Group.</p></div></div></footer>
+</div>
+
+<!-- ═══════════════════ PAGE: TESTIMONIALS ═══════════════════ -->
+<div id="page-testimonials" class="page">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a> › <span>Client Reviews</span></div>
+      <h1>What <em>Sydney Businesses</em> Say About Us</h1>
+      <p>Don't take our word for it. Here's what our clients say after working with Global Cleaning Group.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Google Reviews</div>
+        <h2 class="section-title">★★★★★ Rated 4.9 / 5 — 200+ Reviews</h2>
+      </div>
+      <div class="tests-full-grid">
+        <div class="test-full-card"><span class="test-service-tag">Office Cleaning</span><div class="test-stars">★★★★★</div><p class="test-quote">"We've had Global Cleaning looking after our Parramatta office for three years. The standard has been consistently excellent. Same team every week, which means they know our space and our expectations without us having to remind them."</p><div class="test-meta"><div class="test-avatar">MR</div><div><div class="test-name">Michael R.</div><div class="test-detail">Operations Manager · Parramatta · Jan 2025</div></div></div></div>
+        <div class="test-full-card"><span class="test-service-tag">Warehouse Cleaning</span><div class="test-stars">★★★★★</div><p class="test-quote">"We run a 24/7 distribution centre and needed a cleaning crew that could work around our shifts. Global Cleaning sorted the whole program without any drama. Our safety record has improved since they started — cleaner floors, fewer incidents."</p><div class="test-meta"><div class="test-avatar">SL</div><div><div class="test-name">Sarah L.</div><div class="test-detail">Facility Manager · Blacktown · Feb 2025</div></div></div></div>
+        <div class="test-full-card"><span class="test-service-tag">Strip & Seal</span><div class="test-stars">★★★★★</div><p class="test-quote">"The vinyl floors in our showroom had seen better days. Global Cleaning stripped them back and resealed — they look brand new. Clients keep commenting on how good the floors look. Worth every cent."</p><div class="test-meta"><div class="test-avatar">DK</div><div><div class="test-name">David K.</div><div class="test-detail">Business Owner · Seven Hills · Dec 2024</div></div></div></div>
+        <div class="test-full-card"><span class="test-service-tag">Window Cleaning</span><div class="test-stars">★★★★★</div><p class="test-quote">"Our building had never had a proper window clean in years. The difference is incredible — it's like we've installed new glass. Professional, efficient, and completely disruption-free. Already booked for next quarter."</p><div class="test-meta"><div class="test-avatar">TW</div><div><div class="test-name">Tina W.</div><div class="test-detail">Strata Manager · Penrith · Nov 2024</div></div></div></div>
+        <div class="test-full-card"><span class="test-service-tag">Office Cleaning</span><div class="test-stars">★★★★★</div><p class="test-quote">"We switched from our previous cleaner after years of frustration. The difference is night and day. Global Cleaning is responsive, consistent, and their team is friendly and professional. Our staff have actually commented on the improvement."</p><div class="test-meta"><div class="test-avatar">JA</div><div><div class="test-name">Jennifer A.</div><div class="test-detail">HR Manager · Norwest · Oct 2024</div></div></div></div>
+        <div class="test-full-card"><span class="test-service-tag">High-Pressure Cleaning</span><div class="test-stars">★★★★★</div><p class="test-quote">"Had them pressure wash our car park and loading dock. Looked completely different afterwards — years of built-up grease and grime gone in a few hours. Quoted fairly, did exactly what they said. Highly recommend."</p><div class="test-meta"><div class="test-avatar">BN</div><div><div class="test-name">Brett N.</div><div class="test-detail">Property Manager · Campbelltown · Sep 2024</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY -->
+  <section class="section" style="background:var(--off-white)">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Client Success Story</div>
+        <h2 class="section-title">How We Transformed a Western Sydney Logistics Hub</h2>
+      </div>
+      <div class="case-study">
+        <div class="case-text">
+          <h3>From Compliance Risk to Showcase Facility in 90 Days</h3>
+          <p>A major logistics company in Blacktown was facing WHS compliance issues due to inadequate cleaning of their 8,000m² warehouse. Previous contractors had failed to deliver a consistent standard, and the facility manager was under pressure from head office.</p>
+          <p style="margin-top:1rem">We built a custom 5-night-per-week cleaning program, introduced industrial floor scrubber machines, and put a dedicated 4-person site team in place. Within 90 days, the facility passed its WHS audit with zero findings.</p>
+          <p style="margin-top:1rem;color:var(--teal);font-weight:600">"The improvement was transformational. We went from dreading audits to being proud to show the facility to clients." — Facility Manager</p>
+        </div>
+        <div>
+          <div class="case-before-after">
+            <div class="case-col before">
+              <div class="case-col-label">Before</div>
+              <p>WHS compliance failure risk · Inconsistent cleaning · High staff complaints · Multiple contractor changes in 2 years</p>
+            </div>
+            <div class="case-col after">
+              <div class="case-col-label">After</div>
+              <p>Zero WHS findings · Consistent 5-night program · Dedicated site team · Client renewed for 3-year agreement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>Join 500+ Sydney Businesses Who Trust Us</h2>
+    <p>Get your free quote today and experience the Global Cleaning Group difference.</p>
+    <div class="cta-btns">
+      <a href="#" onclick="showPage('contact')" class="btn-white">→ Get Your Free Quote</a>
+      <a href="tel:1800626659" class="btn-outline-white">☎ 1800 626 659</a>
+    </div>
+  </div>
+
+  <footer><div class="footer-inner"><div class="footer-grid"><div class="footer-brand"><h3>Global Cleaning Group</h3><p>Sydney's commercial cleaning specialists for 15+ years.</p><a href="tel:1800626659" class="footer-phone">☎ 1800 626 659</a></div><div class="footer-col"><h4>Services</h4><ul><li><a href="#" onclick="showPage('services')">Office Cleaning</a></li><li><a href="#" onclick="showPage('services')">Warehouse Cleaning</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('about')">About Us</a></li><li><a href="#" onclick="showPage('testimonials')">Reviews</a></li><li><a href="#" onclick="showPage('contact')">Contact</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:1800626659">1800 626 659</a></li></ul></div></div><div class="footer-bottom"><p>© 2025 Global Cleaning Group.</p></div></div></footer>
+</div>
+
+<!-- ═══════════════════ PAGE: CONTACT ═══════════════════ -->
+<div id="page-contact" class="page">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a> › <span>Get a Free Quote</span></div>
+      <h1>Let's Talk About Your <em>Cleaning Requirements</em></h1>
+      <p>No obligation, no pressure. Get a free quote tailored to your business — we'll respond within 2 business hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div>
+          <div class="response-badge">
+            <div class="response-badge-dot"></div>
+            <p>We respond to all enquiries within <strong>2 business hours</strong>. For urgent requirements, call us directly on 1800 626 659.</p>
+          </div>
+          <div class="contact-form-box">
+            <h2>Get Your Free Quote</h2>
+            <p class="sub">Tell us about your business and cleaning needs — we'll do the rest.</p>
+            <div class="form-row">
+              <div class="form-group"><label>First Name</label><input type="text" placeholder="James"></div>
+              <div class="form-group"><label>Last Name</label><input type="text" placeholder="Robertson"></div>
+            </div>
+            <div class="form-group"><label>Business Name</label><input type="text" placeholder="Robertson Logistics Pty Ltd"></div>
+            <div class="form-row">
+              <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="0400 000 000"></div>
+              <div class="form-group"><label>Email Address</label><input type="email" placeholder="james@example.com.au"></div>
+            </div>
+            <div class="form-group"><label>Service Required</label>
+              <select>
+                <option>— Select a service —</option>
+                <option>Office Cleaning (Regular)</option>
+                <option>Warehouse / Industrial Cleaning</option>
+                <option>Window & Glass Cleaning</option>
+                <option>High-Pressure Cleaning</option>
+                <option>Strip & Seal Vinyl Floors</option>
+                <option>Strata / Building Cleaning</option>
+                <option>Multiple Services / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Suburb / Area</label><input type="text" placeholder="Parramatta, Sydney CBD..."></div>
+              <div class="form-group"><label>Approx. Size (m²)</label><input type="text" placeholder="e.g. 500m²"></div>
+            </div>
+            <div class="form-group"><label>Tell Us More (Optional)</label><textarea placeholder="Frequency needed, access requirements, any specific concerns..."></textarea></div>
+            <button class="form-submit">Send My Quote Request →</button>
+            <p class="form-note">🔒 Your information is secure and will never be sold or shared.</p>
+          </div>
+        </div>
+        <div class="contact-sidebar">
+          <div class="contact-info-card">
+            <h3>Contact Details</h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div class="contact-info-text"><strong>Phone</strong><a href="tel:1800626659">1800 626 659</a></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div class="contact-info-text"><strong>Email</strong><a href="mailto:info@globalgrp.com.au">info@globalgrp.com.au</a></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div class="contact-info-text"><strong>Address</strong><span>Shop 1, 57 Bulolo Drive<br>Whalan NSW 2770</span></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">⚡</div>
+              <div class="contact-info-text"><strong>Response Time</strong><span>Within 2 business hours</span></div>
+            </div>
+          </div>
+          <div class="hours-card">
+            <h3>Business Hours</h3>
+            <div class="hours-row"><span class="day">Monday – Friday</span><span class="time">7:00am – 6:00pm</span></div>
+            <div class="hours-row"><span class="day">Saturday</span><span class="time">8:00am – 2:00pm</span></div>
+            <div class="hours-row"><span class="day">Sunday</span><span class="time">Emergency only</span></div>
+            <p style="font-size:0.78rem;color:var(--gray-500);margin-top:0.75rem">Cleaning services available 24/7 including after-hours and overnight.</p>
+          </div>
+          <div class="map-placeholder">
+            📍 Google Map<br>
+            <small>57 Bulolo Drive, Whalan NSW 2770</small><br>
+            <small style="color:var(--gray-400)">(Embed Google Maps in WordPress)</small>
+          </div>
+          <div style="background:var(--off-white);border-radius:12px;padding:1.25rem">
+            <h4 style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem">What Happens Next?</h4>
+            <div style="display:flex;flex-direction:column;gap:0.6rem">
+              <div style="display:flex;gap:8px;align-items:flex-start;font-size:0.82rem;color:var(--gray-700)"><span style="color:var(--teal);font-weight:700;flex-shrink:0">1.</span>We review your enquiry within 2 hours</div>
+              <div style="display:flex;gap:8px;align-items:flex-start;font-size:0.82rem;color:var(--gray-700)"><span style="color:var(--teal);font-weight:700;flex-shrink:0">2.</span>We call or email to discuss your requirements</div>
+              <div style="display:flex;gap:8px;align-items:flex-start;font-size:0.82rem;color:var(--gray-700)"><span style="color:var(--teal);font-weight:700;flex-shrink:0">3.</span>We arrange a free site visit if needed</div>
+              <div style="display:flex;gap:8px;align-items:flex-start;font-size:0.82rem;color:var(--gray-700)"><span style="color:var(--teal);font-weight:700;flex-shrink:0">4.</span>You receive a detailed, fixed-price proposal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="footer-inner"><div class="footer-grid"><div class="footer-brand"><h3>Global Cleaning Group</h3><p>Sydney's commercial cleaning specialists for 15+ years.</p><a href="tel:1800626659" class="footer-phone">☎ 1800 626 659</a></div><div class="footer-col"><h4>Services</h4><ul><li><a href="#" onclick="showPage('services')">Office Cleaning</a></li><li><a href="#" onclick="showPage('services')">Warehouse Cleaning</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('about')">About Us</a></li><li><a href="#" onclick="showPage('testimonials')">Reviews</a></li><li><a href="#" onclick="showPage('contact')">Contact</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:1800626659">1800 626 659</a></li></ul></div></div><div class="footer-bottom"><p>© 2025 Global Cleaning Group.</p></div></div></footer>
+</div>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  window.scrollTo({top:0, behavior:'smooth'});
+  observeFadeIns();
+}
+
+function observeFadeIns() {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+  }, {threshold: 0.1});
+  document.querySelectorAll('.fade-in:not(.visible)').forEach(el => obs.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', observeFadeIns);
+</script>
+</body>
+</html>
